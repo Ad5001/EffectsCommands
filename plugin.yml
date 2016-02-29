@@ -1,0 +1,106 @@
+name: EffectsCommands
+author: Ad5001
+version: "0.1"
+api: 1.13.0
+main: EffectsCommands
+
+description: Very shorts commands to add yourself effects
+commands:
+ speed:
+  description: "§6Adding yourself speed effect"
+  usage: "/speed <amplifier>"
+  permission: effect.command.speed
+ jumpboost:
+  description: "§6Adding yourself Jump Boost effect"
+  usage: "/jumpboost <amplifier>"
+  permission: effect.command.jumpboost
+  aliases: [jb]
+ nightvision:
+  description: "§6Adding yourself Night Vision effect"
+  usage: "/nightvision"
+  permission: effect.command.nightvision
+  aliases: [nv]
+ regeneration:
+  description: "§6Adding yourself Regeneration effect"
+  usage: "/regeneration <amplifier>"
+  permission: effect.command.regeneration
+  aliases: [regen]
+ resistance:
+  description: "§6Adding yourself Resistance effect"
+  usage: "/resistance <amplifier>"
+  permission: effect.command.resistance
+  aliases: [res]
+ fireresistance:
+  description: "§6Adding yourself Fire Resistance effect"
+  usage: "/fireresistance <amplifier>"
+  permission: effect.command.fireresistance
+  aliases: [fres]
+ haste:
+  description: "§6Adding yourself haste effect"
+  usage: "/haste <amplifier>"
+  permission: effect.command.haste
+  aliases: [ha]
+ invisible:
+  description: "§6Adding yourself Invisibility effect"
+  usage: "/invisible"
+  permission: effect.command.invisible
+  aliases: [in]
+ saturation:
+  description: "§6Adding yourself Saturation effect"
+  usage: "/saturtion <amplifier>"
+  permission: effect.command.saturation
+  aliases: [sa]
+ waterbreath:
+  description: "§6Adding yourself WaterBreathing effect"
+  usage: "/waterbreath <amplifier>"
+  permission: effect.command.waterbreath
+  aliases: [wb]
+ absorbtion:
+  description: "§6Adding yourself Absorbtion effect"
+  usage: "/absorbtion <amplifier>"
+  permission: effect.command.absorbtion
+  aliases: [ab]
+ healthboost:
+  description: "§6Adding yourself Health Boost effect"
+  usage: "/healthboost <amplifier>"
+  permission: effect.command.healthboost
+  aliases: [hb]
+permissions:
+   effect.command.speed:
+    default: op
+    description: "§6Adding yourself speed effect"
+   effect.command.jumpboost:
+    default: op
+    description: "§6Adding yourself Jump Boost effect"
+   effect.command.nightvision:
+    default: op
+    description: "§6Adding yourself Night Vision effect"
+   effect.command.regeneration:
+    default: op
+    description: "§6Adding yourself Regeneration effect"
+   effect.command.resistance:
+    default: op
+    description: "§6Adding yourself Resistance effect"
+   effect.command.fireresistance:
+    default: op
+    description: "§6Adding yourself Fire Resistance effect"
+   effect.command.haste:
+    default: op
+    description: "§6Adding yourself haste effect"
+   effect.command.invisible:
+    default: op
+    description: "§6Adding yourself invisibility effect"
+   effect.command.saturation:
+    default: op
+    description: "§6Adding yourself saturation effect"
+   effect.command.waterbreath:
+    default: op
+    description: "§6Adding yourself waterbreathing effect"
+   effect.command.absorbtion:
+    default: op
+    description: "§6Adding yourself absorbtion effect"
+   effect.command.healthboost:
+    default: op
+    description: "§6Adding yourself healthboost effect"
+
+...
