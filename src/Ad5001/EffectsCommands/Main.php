@@ -10,10 +10,15 @@ use pocketmine\entity\Effect;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase{
+	public function onEnable() {
+		$this->getServer()->getLogger()->info("EffectsCommands by Ad5001 has been enabled!\n Commands:");
+	}
   public function onCommand(CommandSender $sender, Command $command, $label, array $args){
                  switch($command->getName()) {
 					 case "speed":
-					  if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /speed <Amplifier>");
                            } else {
 					  $speed = Effect::getEffectByName("SPEED");
@@ -25,7 +30,9 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "jumpboost":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /jumpboost <Amplifier>");
                            } else {
 					  $jumpb = Effect::getEffectByName("JUMP");
@@ -37,15 +44,21 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "nightvision":
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } else {
 					  $nv = Effect::getEffectByName("NIGHT_VISION");
 					  $nv->setDuration(999999999999);
 					  $nv->setAmplifier($args[0]);
 					  $nv->setVisible(false);
 					  $sender->addEffect($nv);
+					 }
 					  return true;
 					  break;
 					 case "regeneration":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /regeneration <Amplifier>");
                            } else {
 					  $regen = Effect::getEffectByName("REGENERATION");
@@ -57,7 +70,9 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "resistance":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /resistance <Amplifier>");
                            } else {
 					  $res = Effect::getEffectByName("DAMAGE_RESISTANCE");
@@ -69,15 +84,21 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "fireresistance":
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } else {
 					  $fres = Effect::getEffectByName("FIRE_RESISTANCE");
 					  $fres->setDuration(999999999999);
 					  $fres->setAmplifier(1);
 					  $fres->setVisible(false);
 					  $sender->addEffect($fres);
+					 }
 					  return true;
 					  break;
 					 case "haste":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /haste <Amplifier>");
                            } else {
 					  $haste = Effect::getEffectByName("HASTE");
@@ -89,15 +110,21 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "invisible":
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } else {
 					  $inv = Effect::getEffectByName("INVISIBILITY");
 					  $inv->setDuration(999999999999);
 					  $inv->setAmplifier(1);
 					  $inv->setVisible(false);
 					  $sender->addEffect($inv);
+					 }
 					  return true;
 					  break;
 					 case "saturation":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /saturation <Amplifier>");
                            } else {
 					  $sat = Effect::getEffectByName("SATURATION");
@@ -109,7 +136,9 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "waterbreath":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /weatherbreath <Amplifier>");
                            } else {
 					  $wb = Effect::getEffectByName("WATER_BREATHING");
@@ -121,7 +150,9 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "absorbtion":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /absorbtion <Amplifier>");
                            } else {
 					  $abs = Effect::getEffectByName("ABSORBTION");
@@ -133,7 +164,9 @@ class Main extends PluginBase{
 					  return true;
 					  break;
 					 case "healthboost":
-					 if(count($args) < 1){
+					 if(!$sender instanceof Player){
+						 $sender->sendMessage("§4You §lSERIOUSLY§r§4 think that you can add the Console effects?");
+					 } elseif(count($args) < 1){
                             $sender->sendMessage("§4Usage: /healthboost <Amplifier>");
                            } else {
 					  $heb = Effect::getEffectByName("HEALTH_BOOST");
