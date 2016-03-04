@@ -1,5 +1,5 @@
 <?php
-namespace EffectsCommands;
+namespace Ad5001\EffectsCommands;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\event\Listener;
@@ -8,8 +8,9 @@ use pocketmine\IPlayer;
 use pocketmine\server;
 use pocketmine\entity\Effect;
 use pocketmine\plugin\PluginBase;
-   class Main extends PluginBase {
-          public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+
+class Main extends PluginBase{
+  public function onCommand(CommandSender $sender, Command $command, $label, array $args){
                  switch($command->getName()) {
 					 case "speed":
 					  if(count($args) < 1){
@@ -145,5 +146,4 @@ use pocketmine\plugin\PluginBase;
 					  break;
 				 }
 		  }
-    }
-?>
+}
