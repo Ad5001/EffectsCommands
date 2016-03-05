@@ -26,6 +26,7 @@ class Main extends PluginBase{
 					  $speed->setAmplifier($args[0]);
 					  $speed->setVisible(false);
 					  $sender->addEffect($speed);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now speed " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -40,6 +41,7 @@ class Main extends PluginBase{
 					  $jumpb->setAmplifier($args[0]);
 					  $jumpb->setVisible(false);
 					  $sender->addEffect($jumpb);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now jump boost " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -49,9 +51,10 @@ class Main extends PluginBase{
 					 } else {
 					  $nv = Effect::getEffectByName("NIGHT_VISION");
 					  $nv->setDuration(999999999999);
-					  $nv->setAmplifier($args[0]);
+					  $nv->setAmplifier(1);
 					  $nv->setVisible(false);
 					  $sender->addEffect($nv);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now night vision effect");
 					 }
 					  return true;
 					  break;
@@ -66,6 +69,7 @@ class Main extends PluginBase{
 					  $regen->setAmplifier($args[0]);
 					  $regen->setVisible(false);
 					  $sender->addEffect($regen);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now regeenration " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -80,6 +84,7 @@ class Main extends PluginBase{
 					  $res->setAmplifier($args[0]);
 					  $res->setVisible(false);
 					  $sender->addEffect($res);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now resistance " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -92,6 +97,7 @@ class Main extends PluginBase{
 					  $fres->setAmplifier(1);
 					  $fres->setVisible(false);
 					  $sender->addEffect($fres);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now fire resistance effect");
 					 }
 					  return true;
 					  break;
@@ -106,6 +112,7 @@ class Main extends PluginBase{
 					  $haste->setAmplifier($args[0]);
 					  $haste->setVisible(false);
 					  $sender->addEffect($haste);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now haste " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -118,6 +125,7 @@ class Main extends PluginBase{
 					  $inv->setAmplifier(1);
 					  $inv->setVisible(false);
 					  $sender->addEffect($inv);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now invisibility effect");
 					 }
 					  return true;
 					  break;
@@ -132,6 +140,7 @@ class Main extends PluginBase{
 					  $sat->setAmplifier($args[0]);
 					  $sat->setVisible(false);
 					  $sender->addEffect($sat);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now saturation " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -146,6 +155,7 @@ class Main extends PluginBase{
 					  $wb->setAmplifier($args[0]);
 					  $wb->setVisible(false);
 					  $sender->addEffect($wb);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now water breathing " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -160,6 +170,7 @@ class Main extends PluginBase{
 					  $abs->setAmplifier($args[0]);
 					  $abs->setVisible(false);
 					  $sender->addEffect($abs);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now absorbtion " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
@@ -174,6 +185,7 @@ class Main extends PluginBase{
 					  $heb->setAmplifier($args[0]);
 					  $heb->setVisible(false);
 					  $sender->addEffect($heb);
+					  $sender->sendMessage("§b§l[EffectsCommands]§r§b You have now health boost " . $args[0] . " effect");
 						   }
 					  return true;
 					  break;
