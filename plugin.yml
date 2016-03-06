@@ -1,10 +1,10 @@
----
 name: EffectsCommands
 author: Ad5001
-version: "0.1"
-api:
-- 1.14.0
+version: "1.1"
+api: 1.13.0
 main: Ad5001\EffectsCommands\Main
+
+description: Very shorts commands to add yourself effects
 commands:
  speed:
   description: "§6Adding yourself speed effect"
@@ -55,16 +55,44 @@ commands:
   usage: "/waterbreath <amplifier>"
   permission: effect.command.waterbreath
   aliases: [wb]
- absorbtion:
-  description: "§6Adding yourself Absorbtion effect"
-  usage: "/absorbtion <amplifier>"
-  permission: effect.command.absorbtion
-  aliases: [ab]
+ absorptiontion:
+  description: "§6Adding yourself Absorption effect"
+  usage: "/absorption <amplifier>"
+  permission: effect.command.absorption
+  aliases: [ap]
  healthboost:
   description: "§6Adding yourself Health Boost effect"
   usage: "/healthboost <amplifier>"
   permission: effect.command.healthboost
   aliases: [hb]
+ strength:
+  description: "§6Adding yourself strength effect"
+  usage: "/strength <amplifier>"
+  permission: effect.command.strength
+ allspeed:
+  description: "§6Make all of your body more speedy (Speed & haste)"
+  usage: "/allspeed <amplifier>"
+  permission: effect.command.allspeed
+  aliases: [as]
+ nightpowers:
+  description: "§6Give yourself the powers of the night (NightVision & Invisibility)"
+  usage: "/nightpowers"
+  permission: effect.command.nightpowers
+  aliases: [np]
+ liquidslife:
+  description: "§6Give yourself a life underliquids (Fire resistance & Water Breathing)"
+  usage: "/liquidslife"
+  permission: effect.command.liquidslife
+  aliases: [ll]
+ superstrong:
+  description: "§6Make yourself super strong (Strength & Resistance)"
+  usage: "/superstrong <amplifier>"
+  permission: effect.command.superstrong
+  aliases: [ss]
+ eclear:
+  description: "§6Clear your effects"
+  usage: "/eclear [effect]"
+  permission: effect.command.eclear
 permissions:
    effect.command.speed:
     default: op
@@ -96,11 +124,29 @@ permissions:
    effect.command.waterbreath:
     default: op
     description: "§6Adding yourself waterbreathing effect"
-   effect.command.absorbtion:
+   effect.command.absorptiontion:
     default: op
-    description: "§6Adding yourself absorbtion effect"
+    description: "§6Adding yourself absorption effect"
    effect.command.healthboost:
     default: op
     description: "§6Adding yourself healthboost effect"
+   effect.command.strength:
+    default: op
+    description: "§6Adding yourself strength effect"
+   effect.command.allspeed:
+    default: op
+    description: "§6Make all of your body more speedy (Speed & haste)"
+   effect.command.nightpowers:
+    default: op
+    description: "§6Give yourself the powers of the night (NightVision & Invisibility)"
+   effect.command.liquidslife:
+    default: op
+    description: "§6Give yourself a life underliquids (Fire resistance & Water Breathing)"
+   effect.command.superstrong:
+    default: op
+    description: "§6Make yourself super strong (Strength & Resistance)"
+   effect.command.eclear:
+    default: op
+    description: "§6Clear your effects"
 
 ...
