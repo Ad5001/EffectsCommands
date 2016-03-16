@@ -1,6 +1,6 @@
 name: EffectsCommands
 author: Ad5001
-version: "1.1"
+version: "1.6"
 api: 1.13.0
 main: Ad5001\EffectsCommands\Main
 
@@ -8,11 +8,12 @@ description: Very shorts commands to add yourself effects
 commands:
  speed:
   description: "§6Adding yourself speed effect"
-  usage: "/speed <amplifier>"
+  usage: "/speed <player> <amplifier>"
   permission: effect.command.speed
+  aliases: [spe]
  jumpboost:
   description: "§6Adding yourself Jump Boost effect"
-  usage: "/jumpboost <amplifier>"
+  usage: "/jumpboost <player> <amplifier>"
   permission: effect.command.jumpboost
   aliases: [jb]
  nightvision:
@@ -22,22 +23,22 @@ commands:
   aliases: [nv]
  regeneration:
   description: "§6Adding yourself Regeneration effect"
-  usage: "/regeneration <amplifier>"
+  usage: "/regeneration <player> <amplifier>"
   permission: effect.command.regeneration
   aliases: [regen]
  resistance:
   description: "§6Adding yourself Resistance effect"
-  usage: "/resistance <amplifier>"
+  usage: "/resistance <player> <amplifier>"
   permission: effect.command.resistance
   aliases: [res]
  fireresistance:
   description: "§6Adding yourself Fire Resistance effect"
-  usage: "/fireresistance <amplifier>"
+  usage: "/fireresistance <player> <amplifier>"
   permission: effect.command.fireresistance
   aliases: [fres]
  haste:
   description: "§6Adding yourself haste effect"
-  usage: "/haste <amplifier>"
+  usage: "/haste <player> <amplifier>"
   permission: effect.command.haste
   aliases: [ha]
  invisible:
@@ -47,48 +48,108 @@ commands:
   aliases: [in]
  saturation:
   description: "§6Adding yourself Saturation effect"
-  usage: "/saturtion <amplifier>"
+  usage: "/saturtion <player> <amplifier>"
   permission: effect.command.saturation
   aliases: [sa]
  waterbreath:
   description: "§6Adding yourself WaterBreathing effect"
-  usage: "/waterbreath <amplifier>"
+  usage: "/waterbreath <player> <amplifier>"
   permission: effect.command.waterbreath
   aliases: [wb]
- absorptiontion:
+ absorption:
   description: "§6Adding yourself Absorption effect"
-  usage: "/absorption <amplifier>"
+  usage: "/absorption <player> <amplifier>"
   permission: effect.command.absorption
-  aliases: [ap]
+  aliases: [ab]
  healthboost:
   description: "§6Adding yourself Health Boost effect"
-  usage: "/healthboost <amplifier>"
+  usage: "/healthboost <player> <amplifier>"
   permission: effect.command.healthboost
   aliases: [hb]
  strength:
   description: "§6Adding yourself strength effect"
-  usage: "/strength <amplifier>"
+  usage: "/strength <player> <amplifier>"
   permission: effect.command.strength
+  aliases: [str]
+ slowness:
+  description: "§6Adding a player slowness effect"
+  usage: "/slowness <player> <amplifier>"
+  permission: effect.command.slowness
+  aliases: [slow]
+ miningfatigue:
+  description: "§6Adding a player mining fatigue effect"
+  usage: "/miningfatigue <player> <amplifier>"
+  permission: effect.command.miningfatigue
+  aliases: [mf]
+ blindness:
+  description: "§6Adding a player blindness effect"
+  usage: "/blindness <player> <amplifier>"
+  permission: effect.command.blindness
+  aliases: [blind]
+ hunger:
+  description: "§6Adding a player hunger effect"
+  usage: "/hunger <player> <amplifier>"
+  permission: effect.command.hunger
+  aliases: [hu]
+ weakness:
+  description: "§6Adding a player weakness effect"
+  usage: "/weakness <player> <amplifier>"
+  permission: effect.command.weakness
+  aliases: [weak]
+ poison:
+  description: "§6Adding a player poison effect"
+  usage: "/poison <player> <amplifier>"
+  permission: effect.command.poison
+  aliases: [po]
+ wither:
+  description: "§6Adding a player wither effect"
+  usage: "/wither <player> <amplifier>"
+  permission: effect.command.wither
+  aliases: [wi]
  allspeed:
   description: "§6Make all of your body more speedy (Speed & haste)"
-  usage: "/allspeed <amplifier>"
+  usage: "/allspeed <player> <amplifier>"
   permission: effect.command.allspeed
-  aliases: [as]
+  aliases: [asp]
  nightpowers:
   description: "§6Give yourself the powers of the night (NightVision & Invisibility)"
-  usage: "/nightpowers"
+  usage: "/nightpowers [player]"
   permission: effect.command.nightpowers
   aliases: [np]
  liquidslife:
   description: "§6Give yourself a life underliquids (Fire resistance & Water Breathing)"
-  usage: "/liquidslife"
+  usage: "/liquidslife [player]"
   permission: effect.command.liquidslife
   aliases: [ll]
  superstrong:
   description: "§6Make yourself super strong (Strength & Resistance)"
-  usage: "/superstrong <amplifier>"
+  usage: "/superstrong <player> <amplifier>"
   permission: effect.command.superstrong
   aliases: [ss]
+ healthy:
+  description: "§6Make yourself healthy (Regeneration & Health Boost)"
+  usage: "/healthy <player> <amplifier>"
+  permission: effect.command.healthy
+  aliases: [he]
+ nojump:
+  description: "§6Make a player not able to jump >:)"
+  usage: "/noboost <player>"
+  permission: effect.command.nojump
+  aliases: [nj]
+ drunk:
+  description: "§6Make a player drunk :P (Poison & Regeneration & Nausea ( You can't think it whithout tried this effect, it's too fun xD))"
+  usage: "/drunk <player> <amplifier>"
+  permission: effect.command.drunk
+  aliases: [dr]
+ allslow:
+  description: "§6Make a player body reeeeaaaaaaalllllllyyyyyyy sssssslllllloooooowwwwww :P (Slowness & Mining fatigue)"
+  usage: "/allslow <player> <amplifier>"
+  permission: effect.command.allslow
+  aliases: [als]
+ egod:
+  description: "§6Give you all effects with amplififer 60"
+  usage: "/egod [player]"
+  permission: effect.command.egod
  eclear:
   description: "§6Clear your effects"
   usage: "/eclear [effect]"
@@ -133,6 +194,27 @@ permissions:
    effect.command.strength:
     default: op
     description: "§6Adding yourself strength effect"
+   effect.command.slowness:
+    default: op
+    description: "§6Adding a player slowness effect"
+   effect.command.miningfatigue:
+    default: op
+    description: "§6Adding a player mining fatigue effect"
+   effect.command.blindness:
+    default: op
+    description: "§6Adding a player blindness effect"
+   effect.command.hunger:
+    default: op
+    description: "§6Adding a player hunger effect"
+   effect.command.weakness:
+    default: op
+    description: "§6Adding a player weakness effect"
+   effect.command.poison:
+    default: op
+    description: "§6Adding a player poison effect"
+   effect.command.wither:
+    default: op
+    description: "§6Adding a player wither effect"
    effect.command.allspeed:
     default: op
     description: "§6Make all of your body more speedy (Speed & haste)"
@@ -145,8 +227,23 @@ permissions:
    effect.command.superstrong:
     default: op
     description: "§6Make yourself super strong (Strength & Resistance)"
+   effect.command.healthy:
+    default: op
+    description: "§6Make yourself healthy (Regeneration & Health Boost)"
+   effect.command.nojump:
+    default: op
+    description: "§6Make a player not able to jump >:)"
+   effect.command.drunk:
+    default: op
+    description: "§6Make a player drunk (Regeneration & Poison & Nausea)"
+   effect.command.allslow:
+    default: op
+    description: "§6Make a player drunk (Slowness & Mining fatigue)"
    effect.command.eclear:
     default: op
     description: "§6Clear your effects"
+   effect.command.egod:
+    default: op
+    description: "§6Give you all effects with amplififer 60"
 
 ...
